@@ -1,0 +1,410 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: #222;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('../images/city.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 50px;
+}
+header {
+  line-height: .5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.location {
+  background-color: #222111;
+  color: tomato;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card h2 {
+  text-align: center;
+}
+.card:hover {
+  border-color: #ff99ff;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+
+/* Knowledge style --------------*/
+
+.knowledge {
+  background-color: tomato;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  display: inline-block;
+  }
+
+ .listof {
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: inline-flex;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    list-style: none;
+    width: 100%;
+  }
+
+  .listof h3:hover {
+    color: #26A65B;
+  }
+
+.languages,
+.digital {
+  width: 46.5%;
+}
+
+.languages {
+  float: left;
+}
+
+.digital {
+  float: right;
+}
+
+/* Footer Styles -----------*/
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 0 0;
+
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(../images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+a.github {
+  background-image: url(../images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Page: Experience */
+
+.main-navy {
+  width: 100%;
+  background: #F4D03F;
+  min-height: 30px;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+}
+
+  .fuckups {
+    background-color: tomato;
+    height: 340px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 70px;
+    display: inline-block;
+    background: url('../images/lion.jpg') no-repeat center;
+    background-size: cover;
+    }
+
+    .fuckups h2{
+      padding-top: 20px;
+      color: #F4D03F;
+      float: left;
+      font-size: 3em;
+      position: relative;
+    }
+
+    .fuckups p {
+      padding-top: 0;
+      color: #F4D03F;
+      float: right;
+      font-size: 1em;
+      position: absolute;
+    }
+
+    .examples {
+      background-color: tomato;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      display: inline-block;
+    }
+    .feedback {
+      height: 540px;
+      width: 100%;
+      display: inline-block;
+      background: url('../images/air.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    .feedback h2 {
+      padding-bottom: 20px;
+      color: #F4D03F;
+      float: left;
+      font-size: 3em;
+    }
+
+    #contactme a {
+      font-size: 2em;
+      color: #19B5FE;
+      font-weight: 700;
+    }
+
+
+/* Styles for smaler screens */
+@media (max-width: 719px) {
+
+  header {
+    min-height: 270px;
+  }
+
+  header .profile-image {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: all .5s;
+  }
+
+  .tag {
+    background-color: #efefef;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
+    font-size: 1.1em;
+  }
+
+  .location {
+    background-color: #222111;
+    color: tomato;
+    font-size: 0.8em;
+  }
+
+  .card {
+    font-size: .9em;
+  }
+
+  main {
+    padding-top: 10px;
+  }
+
+  main p {
+    line-height: 1em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  .listof {
+     margin: 0 auto;
+     padding: 10px 10px;
+     display: inline;
+     font-size: 0.8em;
+     line-height: 1.2em;
+     color: black;
+     list-style: none;
+     max-width: 100%;
+   }
+  .knowledge-image {
+    margin-top: 20px;
+    width: 150px;
+    height: 90px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 0;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  .listof {
+     margin: 0 auto;
+     padding: 10px 10px;
+     display: inline-flex;
+     font-size: 1em;
+     line-height: 1.5em;
+     color: black;
+     list-style: none;
+     width: 100%;
+   }
+
+   .knowledge-image {
+     margin-top: 20px;
+     width: 250px;
+     height: 150px;
+     border-radius: 5px;
+     border: 3px solid white;
+     padding: 0;
+   }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+}
