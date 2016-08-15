@@ -268,7 +268,7 @@ a.social:hover {
     }
 
     .feedback h2 {
-      padding-bottom: 20px;
+      padding: 20px 10% 5% 10%;
       color: #F4D03F;
       float: left;
       font-size: 3em;
